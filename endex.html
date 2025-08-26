@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria | Encuentra tu Hogar Ideal</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="IMG_6574.PNG">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-banner {
+            /* AHORA PUEDES USAR UNA IMAGEN LOCAL.
+               1. Crea una carpeta llamada "images" junto a este archivo HTML.
+               2. Guarda tu imagen de banner como "banner.jpg" dentro de la carpeta "images".
+            */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('1.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-[#2a2f4c]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+                <span class="text-2xl font-bold text-gray-800">JL INMOBILIARIA</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#inicio" class="text-gray-600 hover:text-[#2a2f4c] transition duration-300">Inicio</a></li>
+                <li><a href="#propiedades" class="text-gray-600 hover:text-[#2a2f4c] transition duration-300">Propiedades</a></li>
+                <li><a href="#nosotros" class="text-gray-600 hover:text-[#2a2f4c] transition duration-300">Nosotros</a></li>
+                <li><a href="#contacto" class="bg-[#2a2f4c] text-white px-4 py-2 rounded-full hover:bg-[#22253d] transition duration-300">Contacto</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section id="inicio" class="hero-banner h-screen flex items-center justify-center text-white pt-16">
+            <div class="text-center max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Encuentra la Casa de Tus Sueños</h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">Tu nuevo hogar te está esperando. Explora las mejores propiedades en las mejores ubicaciones.</p>
+                <a href="#propiedades" class="bg-white text-[#2a2f4c] font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition duration-300 transform hover:scale-105">Ver Propiedades</a>
+            </div>
+        </section>
+
+        <!-- Featured Properties Section -->
+        <section id="propiedades" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Propiedades Destacadas</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Una selección de nuestras mejores propiedades disponibles para ti.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Property Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Villa+Moderna" alt="Villa Moderna" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-[#2a2f4c] font-semibold bg-[#eef2ff] px-2 py-1 rounded-full">En Venta</span>
+                            <h3 class="text-2xl font-bold my-2">Villa de Lujo en la Costa</h3>
+                            <p class="text-gray-600 mb-4">Santiago de los Caballeros</p>
+                            <div class="flex justify-between items-center text-gray-700 border-t pt-4">
+                                <span class="flex items-center"><i class="fas fa-bed mr-2"></i> 4</span>
+                                <span class="flex items-center"><i class="fas fa-bath mr-2"></i> 3</span>
+                                <span class="flex items-center"><i class="fas fa-ruler-combined mr-2"></i> 320 m²</span>
+                            </div>
+                            <div class="mt-4 text-2xl font-bold text-[#2a2f4c]">$450,000 USD</div>
+                        </div>
+                    </div>
+                    <!-- Property Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/CBD5E0/4A5568?text=Apartamento+Urbano" alt="Apartamento Urbano" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-green-600 font-semibold bg-green-100 px-2 py-1 rounded-full">En Alquiler</span>
+                            <h3 class="text-2xl font-bold my-2">Apartamento en el Centro</h3>
+                            <p class="text-gray-600 mb-4">Santo Domingo</p>
+                            <div class="flex justify-between items-center text-gray-700 border-t pt-4">
+                                <span class="flex items-center"><i class="fas fa-bed mr-2"></i> 2</span>
+                                <span class="flex items-center"><i class="fas fa-bath mr-2"></i> 2</span>
+                                <span class="flex items-center"><i class="fas fa-ruler-combined mr-2"></i> 110 m²</span>
+                            </div>
+                            <div class="mt-4 text-2xl font-bold text-gray-800">$1,200 USD / mes</div>
+                        </div>
+                    </div>
+                    <!-- Property Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/BEE3F8/4A5568?text=Casa+Familiar" alt="Casa Familiar" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-[#2a2f4c] font-semibold bg-[#eef2ff] px-2 py-1 rounded-full">En Venta</span>
+                            <h3 class="text-2xl font-bold my-2">Acogedora Casa Familiar</h3>
+                            <p class="text-gray-600 mb-4">Punta Cana</p>
+                            <div class="flex justify-between items-center text-gray-700 border-t pt-4">
+                                <span class="flex items-center"><i class="fas fa-bed mr-2"></i> 3</span>
+                                <span class="flex items-center"><i class="fas fa-bath mr-2"></i> 2</span>
+                                <span class="flex items-center"><i class="fas fa-ruler-combined mr-2"></i> 250 m²</span>
+                            </div>
+                            <div class="mt-4 text-2xl font-bold text-[#2a2f4c]">$280,000 USD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nuestros Servicios</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Te acompañamos en cada paso del proceso, ya sea que compres, vendas o alquiles.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Compra -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-[#eef2ff] text-[#2a2f4c] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-house-user text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Compra de Propiedades</h3>
+                        <p class="text-gray-600">Te ayudamos a encontrar la propiedad perfecta que se ajuste a tus necesidades y presupuesto.</p>
+                    </div>
+                    <!-- Service Card 2: Venta -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-[#eef2ff] text-[#2a2f4c] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-hand-holding-dollar text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Venta de Propiedades</h3>
+                        <p class="text-gray-600">Maximizamos el valor de tu propiedad y gestionamos todo el proceso de venta por ti.</p>
+                    </div>
+                    <!-- Service Card 3: Alquiler -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-[#eef2ff] text-[#2a2f4c] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-key text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Alquileres</h3>
+                        <p class="text-gray-600">Encontramos al inquilino ideal para tu propiedad o te ayudamos a encontrar el lugar perfecto para alquilar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="nosotros" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <!-- 
+                           AHORA PUEDES USAR UNA IMAGEN LOCAL.
+                           1. Asegúrate de que la carpeta "images" exista.
+                           2. Guarda la foto de tus agentes como "agentes.jpg" dentro de esa carpeta.
+                        -->
+                        <img src="JL.PNG" alt="Equipo de agentes inmobiliarios" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Expertos en el Mercado Inmobiliario</h2>
+                        <p class="text-gray-600 mb-4">Con más de 15 años de experiencia, nuestro equipo de agentes está dedicado a ofrecer un servicio excepcional y personalizado. Conocemos el mercado local a la perfección y estamos aquí para guiarte.</p>
+                        <p class="text-gray-600">Nuestra misión es hacer que el proceso de comprar o vender una propiedad sea lo más sencillo y gratificante posible para nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Contáctanos</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">¿Listo para dar el siguiente paso? ¡Hablemos!</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <!-- Se agrega un ID al formulario para seleccionarlo con JavaScript -->
+                    <form id="contactForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a2f4c]" placeholder="Tu Nombre" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a2f4c]" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a2f4c]" placeholder="Cuéntanos qué tipo de propiedad buscas..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-[#2a2f4c] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#22253d] transition duration-300 w-full md:w-auto">Enviar Consulta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 InmoHogar. Todos los derechos reservados.</p>
+            <p class="text-gray-400 mt-2">Tu socio de confianza en bienes raíces.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para enviar el formulario a WhatsApp -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Prevenir el comportamiento por defecto del formulario (que es recargar la página)
+            event.preventDefault();
+
+            // Obtener los valores de los campos del formulario
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // El número de teléfono al que se enviará el mensaje (incluyendo el código de país sin el +)
+            const phoneNumber = '18293958849';
+
+            // Crear el mensaje que se enviará
+            const whatsappMessage = `*Nueva consulta desde la web InmoHogar*
+            \n*Nombre:* ${name}
+            \n*Correo:* ${email}
+            \n*Mensaje:* ${message}`;
+
+            // Codificar el mensaje para que sea seguro en una URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+
+            // Crear la URL de la API de WhatsApp
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            // Abrir la URL en una nueva pestaña
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+
+</body>
+</html>
